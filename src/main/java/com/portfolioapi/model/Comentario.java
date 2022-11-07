@@ -2,9 +2,14 @@ package com.portfolioapi.model;
 
 import java.time.LocalDateTime;
 
+import javax.persistence.Column;
+import javax.persistence.Embeddable;
+
+@Embeddable
 public class Comentario {
-		
+		@Column(name = "descricao_comentario")
 		private String descriçao;
+		@Column(name = "data_comentario")
 		private LocalDateTime dataComentario;
 		
 		
