@@ -8,16 +8,17 @@ import javax.persistence.Embeddable;
 @Embeddable
 public class Comentario {
 		@Column(name = "descricao_comentario")
-		private String descriçao;
+		private String descricao;
 		@Column(name = "data_comentario")
 		private LocalDateTime dataComentario;
 		
 		
-		public String getDescriçao() {
-			return descriçao;
+		
+		public String getDescricao() {
+			return descricao;
 		}
-		public void setDescriçao(String descriçao) {
-			this.descriçao = descriçao;
+		public void setDescricao(String descricao) {
+			this.descricao = descricao;
 		}
 		public LocalDateTime getDataComentario() {
 			return dataComentario;
