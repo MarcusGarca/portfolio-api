@@ -1,4 +1,5 @@
 package com.portfolioapi.model;
+import com.fasterxml.jackson.annotation.JsonFormat;
 
 import java.time.LocalDateTime;
 
@@ -20,6 +21,9 @@ public class Comentario {
 		public void setDescricao(String descricao) {
 			this.descricao = descricao;
 		}
+		
+		
+		@JsonFormat(pattern="yyyy-MM-dd HH:mm:ss")
 		public LocalDateTime getDataComentario() {
 			return dataComentario;
 		}

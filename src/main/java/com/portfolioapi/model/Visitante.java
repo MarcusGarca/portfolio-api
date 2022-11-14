@@ -17,7 +17,7 @@ public class Visitante {
 	private Integer id;
 	@Column(length = 50 )
 	private String nome;
-	@Column(length = 20)
+	@Column(length = 50)
 	private String profissao;
 	@Embedded
 	private Comentario comentario;
